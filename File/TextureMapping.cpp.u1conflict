@@ -1,0 +1,49 @@
+#include<GL/glut.h>
+#include <cmath>
+#include <cstdio>
+#include "TextureMapping.h"
+
+void TextureMapping::setTexture(GLuint textureId, int texWidth, int texHeight, const int numX,const  int numY){
+  this->textureId = textureId;
+  this->texWidth = texWidth;
+  this->texHeight = texHeight;
+  this->numX=numX;
+  this->numY=numY;
+}
+  
+void TextureMapping::toCylinder(const float THETA){
+  float theta_step=2*THETA/numX;
+  float theta;
+  
+  float x;
+  float ratio = (float)(texHeight)/(float)texWidth;
+  float x_step = ratio/(float)numX;
+  float texHeightHalf =(float)texHeight/2.0;
+  
+  float    R= texWidth/(2*THETA);  
+  
+  glPushMatrix();
+  applyGLTransform();
+  glEnable(GL_TEXTURE_2D);
+  glBindTexture(GL_TEXTURE_2D, textureId);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+  glColor3f(1.0,1.0,1.0);
+  glBegin(GL_QUADS);
+  
+  
+  
+  for(theta=-THETA, x=0; x<ratio; theta+=theta_step, x+=x_step){   
+    glTexCoord2f(x,0);
+    glVertex3f(R*sin(theta),+texHeightHalf,R*cos(theta));
+    glTexCoord2f(x, 5);
+    glVertex3f(R*sin(theta),-texHeightHalf,R*cos(theta));
+    glTexCoord2f((x+x_step), 5);
+    glVertex3f(R*sin(theta+theta_step),-texHeightHalf,R*cos(theta+theta_step));
+    glTexCoord2f((x+x_step),10);
+    glVertex3f(R*sin(theta+theta_step),+texHeightHalf,R*cos(theta+theta_step));
+  }
+  glEnd();
+  glDisable(GL_TEXTURE_2D);
+  glPopMatrix();
+}

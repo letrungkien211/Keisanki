@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="Res">
+    <file>1338227105_Stock Index Down.png</file>
+    <file>1338227127_Stock Index Up.png</file>
+    <file>1338227135_Arrow Right.png</file>
+    <file>1338227144_8.png</file>
+  </qresource>
+</RCC>

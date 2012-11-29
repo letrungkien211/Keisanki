@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1393</width>
+    <height>940</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Slide-2&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTextEdit" name="textEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:22pt; color:#aa0000;&quot;&gt;Sierpinsky Triangle &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Sierpinsky3DGL" name="widget" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>1351</width>
+              <height>784</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="RobotGL" name="widget_2" native="true">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="text">
+             <string>Wave</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="text">
+             <string>Descend</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_6">
+            <property name="text">
+             <string>Climb</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="text">
+             <string>Move Forward</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="text">
+             <string>Move Backward</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>Turn Left</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="text">
+             <string>Turn Right</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="text">
+             <string>Reset</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Sierpinsky3DGL</class>
+   <extends>QWidget</extends>
+   <header>sierpinsky3dgl.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RobotGL</class>
+   <extends>QWidget</extends>
+   <header>robotgl.h</header>
+   <container>1</container>
+   <slots>
+    <slot>moveForward()</slot>
+    <slot>moveBackward()</slot>
+    <slot>turnLeft()</slot>
+    <slot>turnRight()</slot>
+    <slot>test()</slot>
+    <slot>climb()</slot>
+    <slot>identity()</slot>
+    <slot>descend()</slot>
+    <slot>wave()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>textEdit</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_7</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget_2</receiver>
+   <slot>climb()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1371</x>
+     <y>448</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1109</x>
+     <y>483</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget_2</receiver>
+   <slot>moveForward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1371</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1129</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget_2</receiver>
+   <slot>identity()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1371</x>
+     <y>613</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1157</x>
+     <y>636</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget_2</receiver>
+   <slot>turnLeft()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1371</x>
+     <y>547</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1112</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget_2</receiver>
+   <slot>moveBackward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1371</x>
+     <y>514</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1128</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget_2</receiver>
+   <slot>descend()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1371</x>
+     <y>415</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1184</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget_2</receiver>
+   <slot>turnRight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1371</x>
+     <y>580</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1184</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget_2</receiver>
+   <slot>lower()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1283</x>
+     <y>367</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1180</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget_2</receiver>
+   <slot>wave()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1268</x>
+     <y>371</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1128</x>
+     <y>702</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
